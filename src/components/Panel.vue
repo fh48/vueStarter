@@ -1,17 +1,12 @@
 <template>
   <div class="panel">
-    <div class='header'>
-    <h3 class="headline">{{headline}}</h3>
-    <h2 class="sub-headline">{{subHeadline}}</h2>
+    <div class="header">
+      <h3 class="headline">{{ headline }}</h3>
+      <h2 class="sub-headline">{{ subHeadline }}</h2>
     </div>
-      <div class='body'>
-            <slot name="body"></slot>
-
-      </div>
+    <div class="body"><slot name="body"></slot></div>
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -22,7 +17,6 @@ export default {
   }
 };
 </script>
-
 
 <style lang="scss" scoped>
 .panel {
